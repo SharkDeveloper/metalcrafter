@@ -1,0 +1,115 @@
+﻿/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827;
+    color: #f9fafb;
+    line-height: 1.6;
+}
+
+/* Стили для веб-компонентов */
+custom-header,
+custom-footer {
+    display: block;
+}
+
+/* Стили для кнопок фильтрации проектов */
+.filter-btn.active {
+    background-color: #2563eb !important;
+}
+
+/* Стили для элементов портфолио */
+.project-item {
+    display: none;
+}
+
+.project-item.show {
+    display: block;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem !important;
+    }
+    
+    .section-title {
+        font-size: 2rem !important;
+    }
+}
+
+/* Стили для форм */
+input, textarea {
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Стили для карточек */
+.service-card, .advantage-card, .project-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover, .advantage-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для кнопок */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для иконок */
+.feather {
+    stroke-width: 1.5;
+}
+
+/* Стили для секций */
+.section {
+    padding: 5rem 0;
+}
+
+.bg-dark-gradient {
+    background: linear-gradient(135deg, #111827 0%, #1e293b 100%);
+}
+
+/* Стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+}
+
+/* Стили для текста */
+.text-gradient {
+    background: linear-gradient(90deg, #2563eb, #ea580c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
