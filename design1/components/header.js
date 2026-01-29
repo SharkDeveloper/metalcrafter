@@ -132,7 +132,7 @@
           <nav class="navbar">
             <a href="index.html" class="logo">
               <i data-feather="cpu" class="logo-icon"></i>
-              <span class="logo-text">MetalCraft Pro</span>
+              <span class="logo-text">MetalCraft</span>
             </a>
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">

@@ -113,7 +113,7 @@
         <div class="container">
           <div class="footer-content">
             <div class="footer-column">
-              <h3>MetalCraft Pro</h3>
+              <h3>MetalCraft</h3>
               <p style="color: #9ca3af; margin-bottom: 1rem;">
                 Профессиональная металлообработка и сварочные работы. Собственные производственные мощности.
               </p>
@@ -159,7 +159,7 @@
           </div>
           
           <div class="copyright">
-            <p>&copy; 2023 MetalCraft Pro. Все права защищены.</p>
+            <p>&copy; 2023 MetalCraft. Все права защищены.</p>
           </div>
         </div>
       </footer>
