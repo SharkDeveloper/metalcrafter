@@ -6,9 +6,9 @@ import os
 app = FastAPI()
 
 # Подключение статических файлов
-app.mount("/static", StaticFiles(directory="design1"), name="static")
+app.mount("/", StaticFiles(directory="design1"), name="static")
 
-@app.get("/")
-async def read_root():
-    return HTMLResponse(open("design1/index.html").read())
+#@app.get("/")
+#async def read_root():
+#    return HTMLResponse(open("design1/index.html").read())
 
