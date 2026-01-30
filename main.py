@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import HTMLResponse
 import os
 
 app = FastAPI()
@@ -9,5 +10,5 @@ app.mount("/static", StaticFiles(directory="design1"), name="static")
 
 @app.get("/")
 async def read_root():
-    return {"message": "Сервис запущен. Статические файлы доступны по адресу /static"}
+    return HTMLResponse(open("design1/index.html").read())
 
