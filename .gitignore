@@ -1,2 +1,5 @@
 ﻿металлобработка
 organize_images.py
+__pycache__
+.qodo
+.venv
