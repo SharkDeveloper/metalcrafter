@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Инициализация: карточки сразу видимы, без автоклика (на случай если стиль .project-item переопределят)
+    projectItems.forEach(item => item.classList.add('show'));
     
     // Анимация при прокрутке
     const observerOptions = {

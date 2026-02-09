@@ -24,8 +24,9 @@ custom-footer {
 }
 
 /* Стили для элементов портфолио */
+/* По умолчанию карточки видимы; скрываем только через .hidden */
 .project-item {
-    display: none;
+    display: block;
 }
 
 .project-item.show {
@@ -116,4 +117,71 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/* Process section styles */
+.process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    padding: 60px 20px;
+    background-color: #0f172a; /* как футер */
+    border-top: 1px solid #334155; /* как футер */
+}
+
+.process-step {
+    background: #111827; /* темная карта как основа сайта */
+    border: 1px solid #1f2937; /* тонкая граница */
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-4px);
+    border-color: #334155;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.35);
+}
+
+.step-circle {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #2563eb, #ea580c); /* общий градиент проекта */
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.process-step h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f9fafb; /* заголовки как в проекте */
+}
+
+.process-step p {
+    font-size: 14px;
+    color: #9ca3af; /* вторичный текст как на сайте */
+    line-height: 1.6;
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+    .process {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .process {
+        grid-template-columns: 1fr;
+    }
 }

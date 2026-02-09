@@ -132,7 +132,7 @@
           <nav class="navbar">
             <a href="index.html" class="logo">
               <i data-feather="cpu" class="logo-icon"></i>
-              <span class="logo-text">MetalCraft</span>
+              <span class="logo-text">Shamonov.corp</span>
             </a>
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">

@@ -113,7 +113,7 @@
         <div class="container">
           <div class="footer-content">
             <div class="footer-column">
-              <h3>MetalCraft</h3>
+              <h3>Shamonov.corp</h3>
               <p style="color: #9ca3af; margin-bottom: 1rem;">
                 Профессиональная металлообработка и сварочные работы. Собственные производственные мощности.
               </p>
@@ -150,16 +150,16 @@
             <div class="footer-column">
               <h3>Контакты</h3>
               <ul>
-                <li style="color: #9ca3af; margin-bottom: 0.75rem;">📞 +7 (800) 123-45-67</li>
+                <li style="color: #9ca3af; margin-bottom: 0.75rem;">📞 +7 (906) 551-77-01</li>
                 <li style="color: #9ca3af; margin-bottom: 0.75rem;">✉️ info@metalcraft.pro</li>
-                <li style="color: #9ca3af; margin-bottom: 0.75rem;">🏢 Москва, ул. Промышленная, 15</li>
-                <li style="color: #9ca3af;">🕒 Пн-Пт: 9:00 - 18:00</li>
+                <li style="color: #9ca3af; margin-bottom: 0.75rem;">🏢 Тверь, Старицкое Шоссе, д. 25с3</li>
+                <li style="color: #9ca3af;">🕒 Ежедневно: 10:00 - 21:00</li>
               </ul>
             </div>
           </div>
           
           <div class="copyright">
-            <p>&copy; 2023 MetalCraft. Все права защищены.</p>
+            <p>&copy; 2023 Shamonov.corp. Все права защищены.</p>
           </div>
         </div>
       </footer>
