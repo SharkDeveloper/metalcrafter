@@ -119,7 +119,7 @@
               </p>
               <div class="social-links">
                 <a href="https://t.me/shamonovcorp">
-                  <img src="images/tg_logo.webp" alt="Telegram" width="24" height="24">
+                  <img src="images/Telegram_logo.png" alt="Telegram" width="24" height="24">
                 </a>
               </div>
             </div>
