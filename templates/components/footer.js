@@ -118,10 +118,7 @@
                 Профессиональная металлообработка и сварочные работы. Собственные производственные мощности.
               </p>
               <div class="social-links">
-                <a href="#"><i data-feather="facebook"></i></a>
-                <a href="#"><i data-feather="instagram"></i></a>
-                <a href="#"><i data-feather="linkedin"></i></a>
-                <a href="#"><i data-feather="youtube"></i></a>
+                <a href="https://t.me/shamonovcorp"><i data-feather="Telegram"></i></a>
               </div>
             </div>
             
