@@ -118,7 +118,9 @@
                 Профессиональная металлообработка и сварочные работы. Собственные производственные мощности.
               </p>
               <div class="social-links">
-                <a href="https://t.me/shamonovcorp"><i data-feather="Telegram"></i></a>
+                <a href="https://t.me/shamonovcorp">
+                  <img src="images/tg_logo.webp" alt="Telegram" width="24" height="24">
+                </a>
               </div>
             </div>
             
