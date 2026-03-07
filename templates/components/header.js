@@ -140,7 +140,7 @@
             </button>
             
             <ul class="nav-links" id="navLinks">
-              <li><a href="index.html">Главная</a></li>
+              <li><a href="">Главная</a></li>
               <li><a href="services.html">Услуги</a></li>
               <li><a href="projects.html">Проекты</a></li>
               <li><a href="contacts.html">Контакты</a></li>
