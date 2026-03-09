@@ -1,0 +1,238 @@
+﻿/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827;
+    color: #f9fafb;
+    line-height: 1.6;
+}
+
+/* Стили для веб-компонентов */
+custom-header,
+custom-footer {
+    display: block;
+}
+
+/* Стили для кнопок фильтрации проектов */
+.filter-btn.active {
+    background-color: #2563eb !important;
+}
+
+/* Стили для элементов портфолио */
+/* По умолчанию карточки видимы; скрываем только через .hidden */
+.project-item {
+    display: block;
+}
+
+.project-item.show {
+    display: block;
+}
+
+.project-item.hidden {
+    display: none;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem !important;
+    }
+    
+    .section-title {
+        font-size: 2rem !important;
+    }
+}
+
+/* Стили для форм */
+input, textarea {
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Стили для карточек */
+.service-card, .advantage-card, .project-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover, .advantage-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для кнопок */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для иконок */
+.feather {
+    stroke-width: 1.5;
+}
+
+/* Стили для секций */
+.section {
+    padding: 5rem 0;
+}
+
+.bg-dark-gradient {
+    background: linear-gradient(135deg, #111827 0%, #1e293b 100%);
+}
+
+/* Стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+}
+
+/* Стили для текста */
+.text-gradient {
+    background: linear-gradient(90deg, #2563eb, #ea580c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Process section styles */
+.process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    padding: 60px 20px;
+    background-color: #0f172a; /* как футер */
+    border-top: 1px solid #334155; /* как футер */
+}
+
+.process-step {
+    background: #111827; /* темная карта как основа сайта */
+    border: 1px solid #1f2937; /* тонкая граница */
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-4px);
+    border-color: #334155;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.35);
+}
+
+.step-circle {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #2563eb, #ea580c); /* общий градиент проекта */
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.process-step h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f9fafb; /* заголовки как в проекте */
+}
+
+.process-step p {
+    font-size: 14px;
+    color: #9ca3af; /* вторичный текст как на сайте */
+    line-height: 1.6;
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+    .process {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .process {
+        grid-template-columns: 1fr;
+    }
+}
+/* Стили для картинок в услугах */
+.services-section .md\:w-1\/2 img {
+    max-width: 100% !important;
+    height: auto;
+    border-radius: 1rem;
+    display: block;
+    object-fit: contain;
+}
+
+/* Ограничение максимальной ширины и высоты картинки на больших экранах */
+@media (min-width: 768px) {
+    .services-section .md\:w-1\/2 {
+        padding: 0 1rem;
+    }
+    .services-section .md\:w-1\/2 img {
+        max-width: 80% !important;
+        max-height: 60vh;
+        margin: 0 auto;
+    }
+}
+
+/* Отступы от краев экрана на мобильных */
+@media (max-width: 767px) {
+    .services-section .flex-col {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .services-section .md\:w-1\/2 img {
+        margin: 0 auto 1.5rem;
+        max-width: 95% !important;
+        max-height: 50vh;
+    }
+}
+
+/* Сохранение пропорций и ограничение по высоте */
+.services-section .md\:w-1\/2:has(img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Отступы для услуг с текстом слева (обратный порядок) */
+@media (min-width: 768px) {
+    .services-section .md\:flex-row-reverse .md\:w-1\/2:last-child {
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+    .services-section .md\:flex-row-reverse .md\:w-1\/2:first-child {
+        padding-right: 2rem;
+        padding-left: 1rem;
+    }
+}
