@@ -185,3 +185,54 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
     }
 }
+/* Стили для картинок в услугах */
+.services-section .md\:w-1\/2 img {
+    max-width: 100% !important;
+    height: auto;
+    border-radius: 1rem;
+    display: block;
+    object-fit: contain;
+}
+
+/* Ограничение максимальной ширины и высоты картинки на больших экранах */
+@media (min-width: 768px) {
+    .services-section .md\:w-1\/2 {
+        padding: 0 1rem;
+    }
+    .services-section .md\:w-1\/2 img {
+        max-width: 80% !important;
+        max-height: 60vh;
+        margin: 0 auto;
+    }
+}
+
+/* Отступы от краев экрана на мобильных */
+@media (max-width: 767px) {
+    .services-section .flex-col {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .services-section .md\:w-1\/2 img {
+        margin: 0 auto 1.5rem;
+        max-width: 95% !important;
+        max-height: 50vh;
+    }
+}
+
+/* Сохранение пропорций и ограничение по высоте */
+.services-section .md\:w-1\/2:has(img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Отступы для услуг с текстом слева (обратный порядок) */
+@media (min-width: 768px) {
+    .services-section .md\:flex-row-reverse .md\:w-1\/2:last-child {
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+    .services-section .md\:flex-row-reverse .md\:w-1\/2:first-child {
+        padding-right: 2rem;
+        padding-left: 1rem;
+    }
+}
