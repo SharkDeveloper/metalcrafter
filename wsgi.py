@@ -4,7 +4,7 @@ import sys
 activate_this = os.path.expanduser('~/metalcraft/venv/bin/activate_this.py')
 exec(open(activate_this).read(), {'__file__': activate_this})
 
-sys.path.insert(1, os.path.expanduser('~/metalcraft/public_html/'))
+sys.path.insert(1, os.path.expanduser('~/public_html/'))
 
 from django.core.wsgi import get_wsgi_application
 
