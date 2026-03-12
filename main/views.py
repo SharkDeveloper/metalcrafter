@@ -12,10 +12,12 @@ def projects(request):
 def contacts(request):
     success = False
     if request.method == 'POST':
-        name = request.POST.get('name', '')
-        phone = request.POST.get('phone', '')
-        email = request.POST.get('email', '')
-        message = request.POST.get('message', '')
-        print(f"Заявка: {name} | {phone} | {email} | {message}")
+        name = request.POST.get('name')
+        company = request.POST.get('company')
+        phone = request.POST.get('phone')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+        
+        print(f"Заявка: {company} | {name} | {phone} | {email} | {message}")
         success = True
     return render(request, 'main/contacts.html', {'success': success})
