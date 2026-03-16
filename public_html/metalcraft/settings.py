@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-u#o3v%ntvb6-7(-fcudp8dw5+mt_v##th0l%jh&85&vaa8*6x@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["shamonovcorp.ru", "www.shamonovcorp.ru", '127.0.0.1']
 
@@ -65,7 +65,7 @@ WSGI_APPLICATION = 'wsgi.application'
 DATABASES = {}  # база не нужна для статического сайта
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static_root'
+STATIC_ROOT = BASE_DIR / 'static'
 
 
 # Password validation
