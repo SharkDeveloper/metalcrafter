@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .smtp_sender import send_mail
 
 def index(request):
     return render(request, 'main/index.html')
@@ -17,7 +18,7 @@ def contacts(request):
         phone = request.POST.get('phone')
         email = request.POST.get('email')
         message = request.POST.get('message')
-        
+        success = send_mail(company=company, name=name, phone=phone, email=email, description=message)
         print(f"Заявка: {company} | {name} | {phone} | {email} | {message}")
-        success = True
+        
     return render(request, 'main/contacts.html', {'success': success})

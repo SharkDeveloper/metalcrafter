@@ -150,7 +150,7 @@
               <h3>Контакты</h3>
               <ul>
                 <li style="color: #9ca3af; margin-bottom: 0.75rem;">📞 +7 (909) 371-79-93</li>
-                <li style="color: #9ca3af; margin-bottom: 0.75rem;">✉️ info@metalcraft.pro</li>
+                <li style="color: #9ca3af; margin-bottom: 0.75rem;">✉️ metal@shamonovcorp.ru</li>
                 <li style="color: #9ca3af; margin-bottom: 0.75rem;">🏢 Тверь, Старицкое Шоссе, д. 25с3</li>
                 <li style="color: #9ca3af; margin-bottom: 0.75rem;">🏢 Санкт-Петербург, Пушкинский район, поселок Шушары, 1-й Бадаевский проезд, д. 1Б</li>
                 <li style="color: #9ca3af;">🕒 Ежедневно: 10:00 - 21:00</li>

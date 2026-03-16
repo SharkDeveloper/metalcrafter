@@ -56,7 +56,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'metalcraft.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database
